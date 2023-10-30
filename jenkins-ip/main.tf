@@ -16,7 +16,7 @@ resource "aws_route53_record" "jenkins" {
   type    = "A"
   zone_id = "Z09059901XRPHNYMGLMJ4"
   records = [data.aws_instance.instance.public_ip]
-  ttl = 10
+  ttl     = 10
 }
 
 
@@ -29,6 +29,6 @@ resource "aws_route53_record" "artifactory" {
   type    = "A"
   zone_id = "Z09059901XRPHNYMGLMJ4"
   records = [data.aws_instance.artifactory.public_ip]
-  ttl = 10
+  ttl     = 10
 }
 
